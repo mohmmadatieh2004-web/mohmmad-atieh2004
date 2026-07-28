@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 1.75em; /* 75% larger than body text */
+    margin: 30px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px; /* horizontal spacing between sections and browser edges */
+}
+
+.menu-section {
+    position: relative; /* needed so the title can be positioned absolute inside it */
+    width: 30%;
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    padding: 35px 15px 15px 15px; /* extra top padding so text doesn't overlap the title */
+    margin: 0 10px; /* horizontal spacing between sections */
+}
+
+.menu-section p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 10px;
+    font-size: 1.25em; /* 25% larger than body text */
+    font-weight: bold;
+    border: 1px solid black;
+    color: #000;
+}
+
+.chicken-title {
+    background-color: #e57373;
+}
+
+.beef-title {
+    background-color: #c62828;
+    color: #fff;
+}
+
+.sushi-title {
+    background-color: #ffca28;
+}
